@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
               Adatvédelmi Irányelvek
             </h1>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xl mx-auto">
-              Utolsó frissítés: 2026. január 1. &bull; GDPR-kompatibilis
+              Utolsó frissítés: 2026. &bull; GDPR-kompatibilis
             </p>
           </div>
         </section>

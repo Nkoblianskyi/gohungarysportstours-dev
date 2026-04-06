@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
               Cookie (Süti) Szabályzat
             </h1>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xl mx-auto">
-              Utolsó frissítés: 2026. január 1. &bull; Hatályos: 2026. január 1-jétől
+              Utolsó frissítés: 2026.  &bull; Hatályos: 2026.
             </p>
           </div>
         </section>
