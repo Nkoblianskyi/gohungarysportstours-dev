@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* GoHungary Sports Tours – deep navy, athletic red, clean white */
+  --background: oklch(0.97 0.005 240);       /* near-white with cool tint */
+  --foreground: oklch(0.12 0.03 250);        /* deep navy */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.12 0.03 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.12 0.03 250);
+  --primary: oklch(0.42 0.20 25);            /* athletic red */
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.94 0.01 240);         /* light steel blue-grey */
+  --secondary-foreground: oklch(0.12 0.03 250);
+  --muted: oklch(0.91 0.01 230);
+  --muted-foreground: oklch(0.48 0.025 240);
+  --accent: oklch(0.55 0.18 250);            /* vivid sport blue */
+  --accent-foreground: oklch(0.98 0 0);
+  --disclaimer-bg: oklch(0.97 0.06 75);      /* amber tint */
+  --disclaimer-border: oklch(0.70 0.14 65);
+  --disclaimer-text: oklch(0.22 0.04 40);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.88 0.01 240);
+  --input: oklch(0.91 0.01 235);
+  --ring: oklch(0.42 0.20 25);
+  --radius: 0.625rem;
+
+  /* Brand navy for footer/hero bg */
+  --navy: oklch(0.18 0.06 255);
+  --navy-light: oklch(0.25 0.07 255);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-oswald);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-disclaimer-bg: var(--disclaimer-bg);
+  --color-disclaimer-border: var(--disclaimer-border);
+  --color-disclaimer-text: var(--disclaimer-text);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.disclaimer-box {
+  background-color: var(--disclaimer-bg);
+  border: 2px solid var(--disclaimer-border);
+  color: var(--disclaimer-text);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
